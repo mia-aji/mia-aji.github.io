@@ -1,2 +1,2 @@
 # mia-aji.github.io
-Neng Mia and Aji web invitation
+Neng Mia and Aji wedding invitation page
