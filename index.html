@@ -395,26 +395,7 @@
     <script src="js/animsition.min.js"></script>
     <script src="js/designesia.js"></script>
 
-    <script>
-	    window.addEventListener('load', function () {
-		var audioCtx = new (window.AudioContext || window.webkitAudioContext)();
-		var source = audioCtx.createBufferSource();
-		var xhr = new XMLHttpRequest();
-		xhr.open('GET', 'music/Goodness Of God - Bethel Music (Sudirman Worship Instrumental Cover).mp3');
-		xhr.responseType = 'arraybuffer';
-		xhr.addEventListener('load', function (r) {
-		    audioCtx.decodeAudioData(
-			    xhr.response, 
-			    function (buffer) {
-				source.buffer = buffer;
-				source.connect(audioCtx.destination);
-				source.loop = true;
-			    });
-		    source.start(0);
-		});
-		xhr.send();
-	    });
-	    
+    <script>  
 	    function touchStarted() {
   		getAudioContext().resume();
 		}
