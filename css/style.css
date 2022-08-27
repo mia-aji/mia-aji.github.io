@@ -1947,6 +1947,16 @@ h2.name {
 	line-height: 50px;
 	font-weight: normal;
 }
+
+@media screen and (max-width: 600px) {
+  h2.name {
+	font-size: 24px;
+  }
+  .deco-big {
+	font-size: 36px;
+  }
+}
+
 h2.name span {
 	display: block;
 	font-size: 32px;
